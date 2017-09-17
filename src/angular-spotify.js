@@ -432,6 +432,9 @@
             return this.api('/me', 'GET', null, null, this._auth());
           },
 
+          getCurrentTrack: function () {
+            return this.api('/me/player', 'GET', null, null, this._auth());
+          },
 
 
           /**
